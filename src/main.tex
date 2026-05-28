@@ -1,0 +1,50 @@
+% ============================================================
+% 一生一芯 C 阶段结业答辩 Beamer 模板
+% ============================================================
+\documentclass[aspectratio=169, 12pt]{beamer}
+
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{frametitle}{}
+\setbeamertemplate{itemize items}[circle]
+
+\definecolor{accentOne}{HTML}{122E66}
+\definecolor{accentTwo}{HTML}{D0B296}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\usepackage[UTF8, fontset=none]{ctex}
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+\newCJKfontfamily\zhongsong{Source Han Serif CN}
+
+\usepackage{graphicx}
+\graphicspath{{../assets/}}
+\usepackage{tikz}
+
+\geometry{paperwidth=13.333in, paperheight=7.5in}
+\setlength{\parindent}{0pt}
+
+% 绝对定位辅助命令
+% 用法: \abspos{x(in)}{y(in)}{content}
+\newcommand{\abspos}[3]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, inner sep=0pt, outer sep=0pt]
+      at ([xshift=#1, yshift=-#2]current page.north west) {#3};
+  \end{tikzpicture}%
+}
+
+\begin{document}
+
+\input{slides/1_title}
+\input{slides/2_demo}
+\input{slides/3_exam}
+\input{slides/4_detail}
+\input{slides/5_thanks}
+
+\end{document}
