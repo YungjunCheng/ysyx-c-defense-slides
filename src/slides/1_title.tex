@@ -7,11 +7,25 @@
       {\fontsize{32}{38}\selectfont\bfseries\color{black}——}%
     }%
   }
+  % 姓名圆角方框 (4.162, 3.936) 4.000 x 0.428
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[accentTwo, line width=1pt, rounded corners=0.214in]
+      ([xshift=4.162in, yshift=-3.936in]current page.north west)
+      rectangle
+      ([xshift=8.162in, yshift=-4.364in]current page.north west);
+  \end{tikzpicture}
   \abspos{0in}{3.936in}{%
     \makebox[\slideW][c]{%
       {\fontsize{18}{22}\selectfont\color{black}姓名：\underline{\hspace{3cm}}}%
     }%
   }
+  % 学校圆角方框 (4.162, 4.529) 4.000 x 0.428
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[accentTwo, line width=1pt, rounded corners=0.214in]
+      ([xshift=4.162in, yshift=-4.529in]current page.north west)
+      rectangle
+      ([xshift=8.162in, yshift=-4.957in]current page.north west);
+  \end{tikzpicture}
   \abspos{0in}{4.529in}{%
     \makebox[\slideW][c]{%
       {\fontsize{18}{22}\selectfont\color{black}学校：\underline{\hspace{3cm}}}%
