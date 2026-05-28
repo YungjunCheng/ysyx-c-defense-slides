@@ -15,8 +15,9 @@
 *.vrb
 *.xdv
 
-# Generated PDF
-dist/*.pdf
+# Build output
+dist/*
+!dist/.gitkeep
 
 # LibreOffice lock files
 .~lock.*

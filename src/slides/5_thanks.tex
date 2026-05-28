@@ -1,30 +1,6 @@
-% ============================================================
 % Slide 5: 致谢页
-% ============================================================
-{
-\setbeamertemplate{background}{}
-\begin{frame}[plain]
-  % 金色边框
-  \begin{tikzpicture}[remember picture, overlay]
-    \draw[accentTwo, line width=1.5pt]
-      ([xshift=0.384in, yshift=-0.342in]current page.north west)
-      rectangle
-      ([xshift=-0.384in, yshift=0.266in]current page.south east);
-  \end{tikzpicture}
-
-  % Logo (0.384, 0.342) 2.419 x 2.233
-  \abspos{0.384in}{0.342in}{%
-    \includegraphics[width=2.419in, height=2.233in]{logo.png}%
-  }
-
-  % 恳请各位助教老师批评指正！ (2.906, 3.265) 7.431 x 0.773
+\coverslide{%
   \abspos{2.906in}{3.265in}{%
-    {\zhongsong\fontsize{40}{48}\selectfont\bfseries\color{accentOne}恳请各位助教老师批评指正！}%
+    {\zhongsong\fontsize{40}{48}\selectfont\bfseries\color{black}恳请各位助教老师批评指正！}%
   }
-
-  % 底部深蓝条 (0, 6.389) 13.333 x 1.111
-  \abspos{0in}{6.389in}{%
-    \color{accentOne}\rule{13.333in}{1.111in}%
-  }
-\end{frame}
 }

@@ -1,44 +1,20 @@
-% ============================================================
 % Slide 1: 标题页
-% ============================================================
-{
-\setbeamertemplate{background}{}
-\begin{frame}[plain]
-  % 金色边框 (0.384, 0.342) 12.565 x 6.892
-  \begin{tikzpicture}[remember picture, overlay]
-    \draw[accentTwo, line width=1.5pt]
-      ([xshift=0.384in, yshift=-0.342in]current page.north west)
-      rectangle
-      ([xshift=-0.384in, yshift=0.266in]current page.south east);
-  \end{tikzpicture}
-
-  % Logo (0.384, 0.342) 2.419 x 2.233
-  \abspos{0.384in}{0.342in}{%
-    \includegraphics[width=2.419in, height=2.233in]{logo.png}%
-  }
-
-  % 主标题 (-0.333, 2.647) 12.148 x 0.773 — 整体居中
+\coverslide{%
   \abspos{0in}{2.647in}{%
-    \makebox[\paperwidth][c]{%
-      {\fontsize{32}{38}\selectfont\bfseries\color{accentOne}——}%
-      {\fontsize{40}{48}\selectfont\bfseries\color{accentOne}\,一生一芯\,C 阶段结业答辩\,}%
-      {\fontsize{32}{38}\selectfont\bfseries\color{accentOne}——}%
+    \makebox[\slideW][c]{%
+      {\fontsize{32}{38}\selectfont\bfseries\color{black}——}%
+      {\fontsize{40}{48}\selectfont\bfseries\color{black}\,一生一芯\,C 阶段结业答辩\,}%
+      {\fontsize{32}{38}\selectfont\bfseries\color{black}——}%
     }%
   }
-
-  % 姓名 (4.162, 3.936) 4.000 x 0.428
-  \abspos{4.162in}{3.936in}{%
-    {\fontsize{18}{22}\selectfont\color{accentOne}姓名：\underline{\hspace{3cm}}}%
+  \abspos{0in}{3.936in}{%
+    \makebox[\slideW][c]{%
+      {\fontsize{18}{22}\selectfont\color{accentOne}姓名：\underline{\hspace{3cm}}}%
+    }%
   }
-
-  % 学校 (4.162, 4.529) 4.000 x 0.428
-  \abspos{4.162in}{4.529in}{%
-    {\fontsize{18}{22}\selectfont\color{accentOne}学校：\underline{\hspace{3cm}}}%
+  \abspos{0in}{4.529in}{%
+    \makebox[\slideW][c]{%
+      {\fontsize{18}{22}\selectfont\color{accentOne}学校：\underline{\hspace{3cm}}}%
+    }%
   }
-
-  % 底部深蓝条 (0, 6.389) 13.333 x 1.111
-  \abspos{0in}{6.389in}{%
-    \color{accentOne}\rule{13.333in}{1.111in}%
-  }
-\end{frame}
 }
