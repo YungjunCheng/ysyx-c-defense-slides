@@ -100,9 +100,21 @@
       \includegraphics[width=\logoW, height=\logoH]{logo.png}%
     }
     #1
-    \abspos{0in}{\bottomBarY}{%
-      \color{accentOne}\rule{\slideW}{\bottomBarH}%
-    }
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[accentOne]
+        ([xshift=6.667in, yshift=-\bottomBarY]current page.north west)
+        .. controls ([xshift=9.133in, yshift=-\bottomBarY]current page.north west)
+                    and ([xshift=11.367in, yshift={-(\bottomBarY+0.152in)}]current page.north west)
+        .. ([xshift=12.981in, yshift={-(\bottomBarY+0.397in)}]current page.north west)
+        -- ([xshift=\slideW, yshift={-(\bottomBarY+0.455in)}]current page.north west)
+        -- ([xshift=\slideW, yshift={-(\bottomBarY+\bottomBarH)}]current page.north west)
+        -- ([xshift=0in, yshift={-(\bottomBarY+\bottomBarH)}]current page.north west)
+        -- ([xshift=0in, yshift={-(\bottomBarY+0.455in)}]current page.north west)
+        -- ([xshift=0.350in, yshift={-(\bottomBarY+0.397in)}]current page.north west)
+        .. controls ([xshift=1.967in, yshift={-(\bottomBarY+0.152in)}]current page.north west)
+                    and ([xshift=4.200in, yshift=-\bottomBarY]current page.north west)
+        .. cycle;
+    \end{tikzpicture}
   \end{frame}%
 }
 
