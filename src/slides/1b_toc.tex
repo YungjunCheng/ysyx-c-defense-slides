@@ -1,0 +1,42 @@
+% Slide 1b: 目录页
+\begin{slideframe}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[accentTwo, line width=1.5pt]
+      ([xshift=\borderInset, yshift=-\borderTopY]current page.north west)
+      rectangle
+      ([xshift=-\borderInset, yshift=\borderBotY]current page.south east);
+    \fill[accentOne]
+      ([xshift=6.667in, yshift=-\bottomBarY]current page.north west)
+      .. controls ([xshift=9.133in, yshift=-\bottomBarY]current page.north west)
+                  and ([xshift=11.367in, yshift={-(\bottomBarY+0.152in)}]current page.north west)
+      .. ([xshift=12.981in, yshift={-(\bottomBarY+0.397in)}]current page.north west)
+      -- ([xshift=\slideW, yshift={-(\bottomBarY+0.455in)}]current page.north west)
+      -- ([xshift=\slideW, yshift={-(\bottomBarY+\bottomBarH)}]current page.north west)
+      -- ([xshift=0in, yshift={-(\bottomBarY+\bottomBarH)}]current page.north west)
+      -- ([xshift=0in, yshift={-(\bottomBarY+0.455in)}]current page.north west)
+      -- ([xshift=0.350in, yshift={-(\bottomBarY+0.397in)}]current page.north west)
+      .. controls ([xshift=1.967in, yshift={-(\bottomBarY+0.152in)}]current page.north west)
+                  and ([xshift=4.200in, yshift=-\bottomBarY]current page.north west)
+      .. cycle;
+  \end{tikzpicture}
+  \abspos{1in}{1.7in}{%
+    \parbox{6in}{%
+      {\fontsize{32}{38}\selectfont\bfseries\color{accentOne}目录}%
+    }%
+  }
+  \abspos{1in}{2.7in}{%
+    \parbox{7in}{%
+      {\fontsize{24}{30}\selectfont\bfseries\color{accentOne}01\quad 功能演示}%
+    }%
+  }
+  \abspos{1in}{3.4in}{%
+    \parbox{7in}{%
+      {\fontsize{24}{30}\selectfont\bfseries\color{accentOne}02\quad 考核题目讲解}%
+    }%
+  }
+  \abspos{1in}{4.1in}{%
+    \parbox{7in}{%
+      {\fontsize{24}{30}\selectfont\bfseries\color{accentOne}03\quad 细节讲解}%
+    }%
+  }
+\end{slideframe}
